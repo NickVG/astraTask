@@ -8,9 +8,8 @@
 
 `.\provisioning` - файлы необхожмые для запуска provisioning (ansible, docker-compose, prometheus, grafana)
 
-`.\provisioning\inventory` - inventory ansible
-
-`.\provisioning\main.yml` - основной плейбук ansible
+  - `inventory` - inventory ansible
+  - `main.yml` - основной плейбук ansible
 
 `.\provisioning\roles\node_exporter` - роль ansible Для node_exporter
 
