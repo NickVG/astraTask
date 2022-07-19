@@ -14,6 +14,11 @@
 
 `.\provisioning\roles\node_exporter` - роль ansible Для node_exporter
 
-`.\provisioning\compose` - набор файлов для docker-compose, включая `docker-compose.yml`, `prometheus.yml`
+`.\provisioning\compose` - набор файлов для docker-compose 
+ 
+  - `docker-compose.yml` - файл docker-compose
+  - `prometheus.yml` - файл настроек prometheus
+
+`.\provisioning\compose\grafana` - директория с файлами настроек grafana (dashboard и конфигурация)
 
 
