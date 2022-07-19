@@ -1,0 +1,28 @@
+---
+- hosts: compose
+  become: true
+  gather_facts: false
+  tasks:
+  - name: copy Docker Compose files
+    copy:
+      src: compose/
+      dest: /docker-compose/
+
+# use files parameter to use multiple docker-compose.yml files
+#  - name: deploy Docker Compose stack
+#    community.docker.docker_compose:
+#      project_src: /docker-compose/
+#      files:
+#      - docker-compose.yml
+#    - docker-compose.prod.yml
+
+#- hosts: compose
+#  become: true
+#  gather_facts: false
+#  tasks:
+  - name: RUN docker-compose
+    shell:
+      cmd: " ./docker-compose"
+      chdir: "/docker-compose/"
+      
+
