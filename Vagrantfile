@@ -14,6 +14,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "COMPOSE", type:'ansible' do |ansible|
     ansible.inventory_path = './provision/inventory'
-    ansible.playbook = './provision/playbook.yml'
+    ansible.playbook = './provision/main.yml'
   end
 end
