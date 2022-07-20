@@ -42,7 +42,10 @@
       enabled: yes
   - name: start docker-compose
     script: "./compose/docker-compose.sh"
-  - name: Allow port range 60000-61000
+  - name: Pause for 10 seconds to wait for docker
+    ansible.builtin.pause:
+      seconds: 10
+  - name: Allow port 3000
     ufw:
       rule: allow
       port: 3000
