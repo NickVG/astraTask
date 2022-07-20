@@ -1,9 +1,9 @@
 # astraTask
 ## Тестовое задание.
 ### Предварительные требоваия!
-Установлены Virtualbox, vagrant, ansible.
+Установлены Virtualbox, vagrant, ansible. Есть VPN до неподсанкционных стран.
 
-В Vagrantfile параметр config.vm.box = "generic/ubuntu2004". Если нет VPN, то требуется скачать и добавить vagrant box. При добавлении vagrant box вручную требуется изменить config.vm.box на новое имя.
+В Vagrantfile параметр `config.vm.box = "generic/ubuntu2004"`. Если нет VPN, то требуется скачать и добавить vagrant box. При добавлении vagrant box вручную требуется изменить config.vm.box на новое имя.
 
 Запуск стенда `vagrant up`
 
