@@ -42,3 +42,7 @@
       enabled: yes
   - name: start docker-compose
     script: "./compose/docker-compose.sh"
+  - name: Allow port range 60000-61000
+    ufw:
+      rule: allow
+      port: 3000
